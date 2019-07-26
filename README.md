@@ -2,6 +2,8 @@
 
 FreeCodeCamp "Build a Product Landing Page" Project
 
+Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
+
 - [ ] User Story #1: My product landing page should have a header element with a corresponding id="header".
 - [ ] User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
 - [ ] User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
@@ -17,3 +19,5 @@ FreeCodeCamp "Build a Product Landing Page" Project
 - [ ] User Story #13: The navbar should always be at the top of the viewport.
 - [ ] User Story #14: My product landing page should have at least one media query.
 - [ ] User Story #15: My product landing page should utilize CSS flexbox at least once.
+
+You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
