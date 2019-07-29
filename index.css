@@ -21,10 +21,16 @@ body {
   background-color: var(--background-color);
 }
 
+/*==============================
+HEADER
+===============================*/
+
 #header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   background-color: var(--dark-primary-color);
 }
 
@@ -52,4 +58,13 @@ body {
 }
 .nav-link:hover {
   color: #fff;
+}
+
+/*==============================
+SECTIONS
+===============================*/
+
+.section {
+  padding-top: 32px;
+  height: calc(100vh - 32px);
 }
