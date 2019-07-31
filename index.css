@@ -68,3 +68,12 @@ SECTIONS
   padding-top: 32px;
   height: calc(100vh - 32px);
 }
+
+.section-title {
+  text-align: center;
+}
+
+#video {
+  display: inline-block;
+  margin: 0 auto;
+}
