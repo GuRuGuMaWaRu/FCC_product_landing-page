@@ -66,6 +66,7 @@ SECTIONS
 
 .section {
   padding-top: 32px;
+  margin: 0 10%;
   height: calc(100vh - 32px);
 }
 
@@ -73,7 +74,24 @@ SECTIONS
   text-align: center;
 }
 
+#about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about-section > article {
+  margin-right: 2rem;
+}
+
+.about-section-title {
+  margin-top: 0;
+}
+
+.about-section-text {
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
 #video {
-  display: inline-block;
-  margin: 0 auto;
 }
