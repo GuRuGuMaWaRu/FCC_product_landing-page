@@ -143,3 +143,53 @@ SECTIONS - MISSIONS
 .mission-card__points {
   color: var(--secondary-text-color);
 }
+
+/*==============================
+SECTIONS - FORM
+===============================*/
+
+.contacts-section-title {
+  color: var(--text-color);
+  text-align: center;
+  margin: 4rem 0 2rem;
+}
+
+#form {
+  background-color: #fff;
+  width: 90%;
+  padding: 2rem;
+  border-radius: 3px;
+  margin: 2rem auto 0;
+}
+
+.contacts-section__email {
+  text-align: center;
+}
+
+input[type="email"] {
+  width: 70%;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 3px;
+  margin-left: 0.4rem;
+  outline: 0;
+}
+
+button[type="submit"] {
+  display: block;
+  color: var(--accent-color);
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 3px;
+  margin: 3rem auto 0;
+  background-color: #fff;
+  transition: color 0.3s, background-color 0.3s;
+  outline: 0;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  color: var(--light-primary-color);
+  background-color: var(--accent-color);
+}
