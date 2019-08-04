@@ -78,13 +78,19 @@ SECTIONS
 ===============================*/
 
 .section {
-  padding-top: 32px;
+  padding-top: 10px;
   margin: 0 10%;
   height: calc(100vh - 32px);
 }
 
 .section-title {
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .section {
+    margin: 0 5%;
+  }
 }
 
 /*==============================
@@ -110,6 +116,31 @@ SECTIONS - ABOUT
   color: var(--secondary-text-color);
   line-height: 1.5rem;
   text-align: justify;
+}
+
+@media (max-width: 800px) {
+  #about-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+  #about-section > article {
+    margin: 4rem 0 2rem;
+  }
+  .about-section-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-section-title {
+    font-size: 1.2rem;
+  }
+  .about-section-text {
+    font-size: 0.8rem;
+  }
 }
 
 /*==============================
@@ -142,6 +173,50 @@ SECTIONS - MISSIONS
 
 .mission-card__points {
   color: var(--secondary-text-color);
+  padding-left: 2rem;
+}
+
+@media (max-width: 900px) {
+  .mission-card__points {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .mission-card__points {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .mission-card__points {
+    font-size: 0.6rem;
+  }
+  .missions-section-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #missions-section {
+    height: auto;
+    margin-bottom: 4rem;
+  }
+  .mission-card-list {
+    flex-direction: column;
+  }
+  .mission-card {
+    flex: 1 0;
+    width: 250px;
+    height: 250px;
+  }
+  .mission-card__title {
+    font-size: 1rem;
+    margin: 0.7rem 0;
+  }
+  .mission-card__points {
+    font-size: 0.8rem;
+  }
 }
 
 /*==============================
@@ -175,7 +250,7 @@ input[type="email"] {
   outline: 0;
 }
 
-button[type="submit"] {
+input[type="submit"] {
   display: block;
   color: var(--accent-color);
   font-size: 1rem;
@@ -189,7 +264,40 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+input[type="submit"]:hover {
   color: var(--light-primary-color);
   background-color: var(--accent-color);
+}
+
+@media (max-width: 700px) {
+  .contacts-section-title {
+    font-size: 1.2rem;
+  }
+  input[type="email"] {
+    margin-top: 0.5rem;
+  }
+  input[type="submit"] {
+    margin-top: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #form {
+    width: 250px;
+  }
+  input[type="email"] {
+    width: 90%;
+  }
+}
+
+/*==============================
+FOOTER
+===============================*/
+
+footer {
+  color: var(--secondary-text-color);
+  background-color: var(--light-primary-color);
+  font-size: 0.5rem;
+  text-align: center;
+  padding: 0.5rem 0;
 }
